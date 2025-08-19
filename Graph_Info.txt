@@ -1,0 +1,22 @@
+Hello, some features of graphs should be explained for this demo to make sense.
+All of this information is in a .txt file which has a more readable format.
+Check out the "Graph_Info.txt" file if the information is hard to interpret in
+the terminal.
+
+Now back to graphs! There are two main representations of graphs: adjacency lists
+and adjacency matrixes. Adjacency lists are used when space should be optomized
+over search. They are basically a list of linked list nodes. I usually do a hybrid
+approach where it easy to jump to the ith parent node but have to iter at that index
+to confirm all children nodes. (vector that contains linkedlist nodes). Our other
+option is to place items in a 2D array (aka matrix). This takes up more space but
+makes searching for children instantaneous! 
+
+Graphs also have two main characteristics: directed (or undirected) and weighted
+(or unweighted). Direction refers to the to and from relationship between nodes.
+Directed maps have an arrow at the end, only one direction is accepted for traversal.
+Undirected graphs have no arrow and both directions are accepted. (You can go to and from
+but also from and to). Weighted refers to the cost of taking a path. Some connections 
+between nodes have a cost (for example fuel, time, etc). Graphs with no numbers
+on any path are unweighted. If one path has a weight, label all paths. Weight and 
+Directionality are not mutually exclusive: graphs can be both, neither, and one but
+not the other.
