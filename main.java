@@ -10,16 +10,6 @@ public class Main{
 		Scanner inputs = new Scanner(System.in);
 		String userInput = "0";
 
-		ArrayList directedList;
-		ArrayList weightedList;
-		ArrayList dwList; 
-		ArrayList ndnwList;
-
-		int[] directedMatrix;
-		int[] weightedMatrix;
-		int[] dwMatrix;
-		int[] ndnwMatrix;
-
 		while(!userInput.equals("x")) {
 			System.out.println("\nWelcome to the graph algorithm demo, please chose a mode by entering the number:");
 			System.out.println("1. Learn about the basics of graph representations");
@@ -58,7 +48,7 @@ public class Main{
 					System.out.print("\nYour Input: ");
 					userInput = inputs.nextLine();
 					if(userInput != "b") {
-
+						ReadFile.readUserGraph(userInput);
 					}
 				}
 				case "x": {
